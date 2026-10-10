@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fr" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script>
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-bs-theme', savedTheme);
+  </script>
+    <link href="style.css" rel="stylesheet">
+    <title>Elhadji Business</title>
+</head>
+<body>
+    <header>
+       <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#accueil" style="font-family: Logos;">Elhadji Business</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#accueil">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="produits.html">Produits</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html #contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <button id="dark-mode-toggle" class="btn btn-outline-dark">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-fill" viewBox="0 0 16 16"><path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/></svg>
+            </button>
+            <button id="light-mode-toggle" class="btn btn-outline-light">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-brightness-high-fill" viewBox="0 0 16 16"><path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/></svg>
+            </button>
+            </ul>
+    </div>
+  </div>
+</nav>
+    </header>
+    <main>
+    <div class="container">
+        <div class="accueil" id="accueil">
+            <div class="row">
+            <h1 class="logo">Elhadji Business</h1>
+            <p class="text">Bienvenue sur notre site !</p>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm d-flex justify-content-center">
+                    <img src="medias/photo_2026-09-11_01-36-48.jpg" alt="Logo Elhadji Business" class="img-fluid rounded w-75">
+                </div>
+                <div class="col-sm d-flex flex-column justify-content-center">
+                <p class="text">Nous vous proposons une large gamme de lunettes de qualité.</p>
+                <p class="text">Mais aussi des montres et accessoires pour compléter votre style.</p>
+                <div class="d-flex gap-2 justify-content-center">
+                <a href="#produits" style="color: white; text-decoration: none;" class="btn btn-primary">Voir nos produits</a>
+                <a href="#contact" style="color: white; text-decoration: none;" class="btn btn-secondary">Contactez nous</a>
+                </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="produits" id="produits">
+            <div class="row">
+                <h2 class="titre">Nos Produits</h2>
+            </div>
+            <div class="categorie">
+                <h3>Lunettes</h3>
+                <div class="row row-cols-2 row-cols-md-3 g-4">
+                <div class="col">
+                          <div class="card h-75 produit">
+                          <img src="medias/produits/lunettes/photo_1_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Lunette 1">
+                          <p class="bg-info-subtle">Prix : 3000 F</p> 
+                          <a type="button" class="btn btn-primary" href="buy.html?id=lunette1">Acheter</a>  
+                          </div>
+                        </div>
+                   <div class="col">
+                          <div class="card h-75 produit">
+                          <img src="medias/produits/lunettes/photo_2_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Lunette 2">
+                          <p class="bg-info-subtle">Prix : 3000 F</p> 
+                          <a type="button" class="btn btn-primary" href="buy.html?id=lunette2">Acheter</a>  
+                          </div>
+                        </div>
+                   <div class="col">
+                          <div class="card h-75 produit">
+                          <img src="medias/produits/lunettes/photo_3_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Lunette 3">
+                          <p class="bg-info-subtle">Prix : 3000 F</p> 
+                          <a type="button" class="btn btn-primary" href="buy.html?id=lunette3">Acheter</a>  
+                          </div>
+                        </div>
+                   <div class="col">
+                          <div class="card h-75 produit">
+                          <img src="medias/produits/lunettes/photo_4_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Montre 15">
+                          <p class="bg-info-subtle">Prix : 5000 F</p> 
+                          <a type="button" class="btn btn-primary" href="buy.html?id=lunette4">Acheter</a>  
+                          </div>
+                        </div>
+                   <div class="col">
+                          <div class="card h-75 produit">
+                          <img src="medias/produits/lunettes/photo_5_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Montre 15">
+                          <p class="bg-info-subtle">Prix : 5000 F</p> 
+                          <a type="button" class="btn btn-primary" href="buy.html?id=lunette5">Acheter</a>  
+                          </div>
+                        </div>
+                    <div class="col">
+                        <div class="card h-75 produit">
+                        <img src="medias/produits/lunettes/photo_15_2026-09-11_20-55-03.jpg" class="card-img-top voir" alt="Lunette 6"> 
+                        <a href="produits.html#lunettes" class="link-info">
+                            <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16"><path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/></svg>
+                            </div>
+                            <p>Voir plus</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="categorie">
+                <h3>Montres</h3>
+                <div class="row row-cols-2 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-75 produit">
+                    <img src="medias/produits/montres/photo_32_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Montre 1">
+                    <p class="bg-info-subtle">Prix : 5000 F</p> 
+                    <a type="button" class="btn btn-primary" href="buy.html?id=montre1">Acheter</a>  
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-75 produit">
+                    <img src="medias/produits/montres/photo_37_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Montre 2">
+                    <p class="bg-info-subtle">Prix : 5000 F</p> 
+                    <a type="button" class="btn btn-primary" href="buy.html?id=montre2">Acheter</a>  
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-75 produit">
+                    <img src="medias/produits/montres/photo_38_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Montre 3">
+                    <p class="bg-info-subtle">Prix : 5000 F</p> 
+                    <a type="button" class="btn btn-primary" href="buy.html?id=montre3">Acheter</a>  
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-75 produit">
+                    <img src="medias/produits/montres/photo_39_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Montre 4">
+                    <p class="bg-info-subtle">Prix : 5000 F</p> 
+                    <a type="button" class="btn btn-primary" href="buy.html?id=montre4">Acheter</a>  
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-75 produit">
+                    <img src="medias/produits/montres/photo_42_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Montre 5">
+                    <p class="bg-info-subtle">Prix : 5000 F</p> 
+                    <a type="button" class="btn btn-primary" href="buy.html?id=montre5">Acheter</a>  
+                    </div>
+                </div>
+                    <div class="col">
+                        <div class="card h-75 produit">
+                        <img src="medias/produits/montres/photo_49_2026-09-11_20-55-03.jpg" class="card-img-top voir" alt="Lunette 6"> 
+                        <a href="produits.html#montres" class="link-info">
+                            <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16"><path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/></svg>
+                            </div>
+                            <p>Voir plus</p>
+                            </a>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+            <div class="categorie">
+                <h3>Autres</h3>
+                <div class="row row-cols-2 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-75 produit">
+                    <img src="medias/produits/photo_61_2026-09-11_20-55-03.jpg" class="card-img-top" alt="...">
+                    <p class="bg-info-subtle">Prix : 5000 F</p> 
+                    <a id="btnbuy" type="button" class="btn btn-info" href="buy.html?id=autre1">Acheter</a>  
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-75 produit">
+                    <img src="medias/produits/photo_62_2026-09-11_20-55-03.jpg" class="card-img-top" alt="...">
+                    <p class="bg-info-subtle">Prix : 5000 F</p> 
+                    <a id="btnbuy" type="button" class="btn btn-info" href="buy.html?id=autre2">Acheter</a>  
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact" id="contact">
+            <div class="row">
+                <h2 class="titre">Contactez-nous</h2>
+            </div>
+            <div class="row" style="border: black 1px solid; border-radius: 5%;">
+                <div class="col" id="contact-col" style="border: black 1px solid; border-radius: 5%;">
+                    <h4>Nos réseaux sociaux</h4><br>
+                    <ul>
+                        <li><a href="https://wa.me/221775997983" target="_blank">WhatsApp</a></li>
+                        <li><a href="https://www.instagram.com/elhadji.lunettes" target="_blank">Instagram</a></li>
+                        <li><a href="https://www.tiktok.com/@elhd.business" target="_blank">Tiktok</a></li>
+                    </ul>
+                </div>
+                <div class="col" id="contact-col" style="border: black 1px solid; border-radius: 5%;">
+                    <h4>Nos contacts</h4><br>
+                    <p class="text">Tel: +221 77 599 79 83</p>
+                    <p class="text">WhatsApp: +221 77 599 79 83</p>
+                    <p class="text">Adresse: Croisement Tivaoune Peulh, Entrée Cité Gendarmerie 2</p>
+                    <p class="text">Email: info@elhadji-lunettes.com</p>
+                </div>
+            </div>
+        </div>
+        <a href="#produits" class="d-flex justify-content-end" id="back-to-top"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/></svg></a> 
+    </div>
+    </main>
+    <br>
+    <footer>
+        <p>&copy; 2026 Elhadji Business. Tous droits réservés.</p>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+<script>
+let btndarkMode = document.getElementById("dark-mode-toggle");
+let btnlightMode = document.getElementById("light-mode-toggle");
+let darkModeIcon = document.getElementById("dark-mode-icon");
+let lightModeIcon = document.getElementById("light-mode-icon");
+let theme = document.documentElement.getAttribute('data-bs-theme');
+
+if (theme === "dark") {
+    btnlightMode.style.display = "block";
+    btndarkMode.style.display = "none";
+} else {
+    btndarkMode.style.display = "block";
+    btnlightMode.style.display = "none";
+}
+
+btndarkMode.addEventListener("click", 
+    () => {
+    document.documentElement.setAttribute('data-bs-theme', 'dark');
+    localStorage.setItem("theme", "dark");
+    btnlightMode.style.display = "block";
+    btndarkMode.style.display = "none";
+});
+
+btnlightMode.addEventListener("click",
+    () => {
+    document.documentElement.setAttribute('data-bs-theme', 'light');
+    localStorage.setItem("theme", "light");
+    btndarkMode.style.display = "block";
+    btnlightMode.style.display = "none";
+});
+</script>
+</html>

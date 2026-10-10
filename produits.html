@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="fr" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script>
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-bs-theme', savedTheme);
+  </script>
+    <link href="style.css" rel="stylesheet">
+    <title>Elhadji Business</title>
+</head>
+<body>
+    <header>
+       <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#accueil" style="font-family: Logos;">Elhadji Business</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="produits.html">Produits</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#contact">Contact</a>
+      </ul>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#lunettes">Lunettes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#montres">Montres</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#autres">Autres</a>
+        </li>
+            <button id="dark-mode-toggle" class="btn btn-outline-dark">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-fill" viewBox="0 0 16 16"><path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/></svg>
+            </button>
+            <button id="light-mode-toggle" class="btn btn-outline-light">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-brightness-high-fill" viewBox="0 0 16 16"><path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/></svg>
+            </button>
+      </ul>
+    </div>
+  </div>
+</nav>
+    </header>
+  <main>
+    <div class="container">
+    <div class="produits" id="produits">
+            <div class="row">
+                <h2 class="titre">Nos Produits</h2>
+            </div>
+            <div class="categorie" id="lunettes">
+                <h3>Lunettes</h3>
+                <div class="row row-cols-2 row-cols-md-3 g-4">
+                   <div class="col">
+                          <div class="card h-75 produit">
+                          <img src="medias/produits/lunettes/photo_1_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Lunette 1">
+                          <p class="bg-info-subtle">Prix : 3000 F</p> 
+                          <a type="button" class="btn btn-primary" href="buy.html?id=lunette1">Acheter</a>  
+                          </div>
+                        </div>
+                   <div class="col">
+                          <div class="card h-75 produit">
+                          <img src="medias/produits/lunettes/photo_2_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Lunette 2">
+                          <p class="bg-info-subtle">Prix : 3000 F</p> 
+                          <a type="button" class="btn btn-primary" href="buy.html?id=lunette2">Acheter</a>  
+                          </div>
+                        </div>
+                   <div class="col">
+                          <div class="card h-75 produit">
+                          <img src="medias/produits/lunettes/photo_3_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Lunette 3">
+                          <p class="bg-info-subtle">Prix : 3000 F</p> 
+                          <a type="button" class="btn btn-primary" href="buy.html?id=lunette3">Acheter</a>  
+                          </div>
+                        </div>
+                   <div class="col">
+                          <div class="card h-75 produit">
+                          <img src="medias/produits/lunettes/photo_4_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Montre 15">
+                          <p class="bg-info-subtle">Prix : 5000 F</p> 
+                          <a type="button" class="btn btn-primary" href="buy.html?id=lunette4">Acheter</a>  
+                          </div>
+                        </div>
+                   <div class="col">
+                          <div class="card h-75 produit">
+                          <img src="medias/produits/lunettes/photo_5_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Montre 15">
+                          <p class="bg-info-subtle">Prix : 5000 F</p> 
+                          <a type="button" class="btn btn-primary" href="buy.html?id=lunette5">Acheter</a>  
+                          </div>
+                        </div>
+                   <div class="col">
+                          <div class="card h-75 produit">
+                          <img src="medias/produits/lunettes/photo_6_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Lunette 6">
+                          <p class="bg-info-subtle">Prix : 3000 F</p> 
+                          <a type="button" class="btn btn-primary" href="buy.html?id=lunette6">Acheter</a>  
+                          </div>
+                        </div>
+                   <div class="col">
+                          <div class="card h-75 produit">
+                          <img src="medias/produits/lunettes/photo_7_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Montre 15">
+                          <p class="bg-info-subtle">Prix : 5000 F</p> 
+                          <a type="button" class="btn btn-primary" href="buy.html?id=lunette7">Acheter</a>  
+                          </div>
+                        </div>
+                   <div class="col">
+                          <div class="card h-75 produit">
+                          <img src="medias/produits/lunettes/photo_8_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Lunette 8">
+                          <p class="bg-info-subtle">Prix : 5000 F</p> 
+                          <a type="button" class="btn btn-primary" href="buy.html?id=lunette8">Acheter</a>  
+                          </div>
+                        </div>
+                   <div class="col">
+                          <div class="card h-75 produit">
+                          <img src="medias/produits/lunettes/photo_9_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Lunette 9">
+                          <p class="bg-info-subtle">Prix : 5000 F</p> 
+                          <a type="button" class="btn btn-primary" href="buy.html?id=lunette9">Acheter</a>  
+                          </div>
+                        </div>
+                <div class="col">
+                    <div class="card h-75 produit">
+                    <img src="medias/produits/lunettes/photo_10_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Lunette 1">
+                    <p class="bg-info-subtle">Prix : 5000 F</p> 
+                    <a type="button" class="btn btn-primary" href="buy.html?id=lunette10">Acheter</a>    
+                </div>
+            </div>
+
+                <div class="col">
+                    <div class="card h-75 produit">
+                    <img src="medias/produits/lunettes/photo_11_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Lunette 2">
+                    <p class="bg-info-subtle">Prix : 5000 F</p> 
+                    <a type="button" class="btn btn-primary" href="buy.html?id=lunette11">Acheter</a>  
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-75 produit">
+                    <img src="medias/produits/lunettes/photo_12_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Lunette 3">
+                    <p class="bg-info-subtle">Prix : 5000 F</p> 
+                    <a type="button" class="btn btn-primary" href="buy.html?id=lunette12">Acheter</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-75 produit">
+                    <img src="medias/produits/lunettes/photo_13_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Lunette 4">
+                    <p class="bg-info-subtle">Prix : 5000 F</p> 
+                    <a type="button" class="btn btn-primary" href="buy.html?id=lunette13">Acheter</a>  
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-75 produit">
+                    <img src="medias/produits/lunettes/photo_14_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Lunette 5">
+                    <p class="bg-info-subtle">Prix : 5000 F</p> 
+                    <a type="button" class="btn btn-primary" href="buy.html?id=lunette14">Acheter</a>  
+                    </div>
+                </div>
+                    <div class="col">
+                        <div class="card h-75 produit">
+                        <img src="medias/produits/lunettes/photo_15_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Lunette 6">
+                        <p class="bg-info-subtle">Prix : 5000 F</p> 
+                        <a type="button" class="btn btn-primary" href="buy.html?id=lunette15">Acheter</a>  
+                            </div>
+                        </div>
+                      <div class="col">
+                        <div class="card h-75 produit">
+                        <img src="medias/produits/lunettes/photo_16_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Lunette 7">
+                        <p class="bg-info-subtle">Prix : 5000 F</p> 
+                        <a type="button" class="btn btn-primary" href="buy.html?id=lunette16">Acheter</a>  
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card h-75 produit">
+                        <img src="medias/produits/lunettes/photo_17_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Lunette 8">
+                        <p class="bg-info-subtle">Prix : 5000 F</p> 
+                        <a type="button" class="btn btn-primary" href="buy.html?id=lunette17">Acheter</a>  
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card h-75 produit">
+                        <img src="medias/produits/lunettes/photo_18_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Lunette 9">
+                        <p class="bg-info-subtle">Prix : 5000 F</p> 
+                        <a type="button" class="btn btn-primary" href="buy.html?id=lunette18">Acheter</a>  
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card h-75 produit">
+                        <img src="medias/produits/lunettes/photo_19_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Lunette 10">
+                        <p class="bg-info-subtle">Prix : 5000 F</p> 
+                        <a type="button" class="btn btn-primary" href="buy.html?id=lunette19">Acheter</a>  
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card h-75 produit">
+                        <img src="medias/produits/lunettes/photo_20_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Lunette 11">
+                        <p class="bg-info-subtle">Prix : 5000 F</p> 
+                        <a type="button" class="btn btn-primary" href="buy.html?id=lunette20">Acheter</a>  
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card h-75 produit">
+                        <img src="medias/produits/lunettes/photo_21_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Lunette 12">
+                        <p class="bg-info-subtle">Prix : 5000 F</p> 
+                        <a type="button" class="btn btn-primary" href="buy.html?id=lunette21">Acheter</a>  
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card h-75 produit">
+                        <img src="medias/produits/lunettes/photo_22_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Lunette 13">
+                        <p class="bg-info-subtle">Prix : 5000 F</p> 
+                        <a type="button" class="btn btn-primary" href="buy.html?id=lunette22">Acheter</a>  
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card h-75 produit">
+                        <img src="medias/produits/lunettes/photo_23_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Lunette 14">
+                        <p class="bg-info-subtle">Prix : 5000 F</p> 
+                        <a type="button" class="btn btn-primary" href="buy.html?id=lunette23">Acheter</a>  
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card h-75 produit">
+                        <img src="medias/produits/lunettes/photo_24_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Lunette 15">
+                        <p class="bg-info-subtle">Prix : 5000 F</p> 
+                        <a type="button" class="btn btn-primary" href="buy.html?id=lunette24">Acheter</a>  
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card h-75 produit">
+                        <img src="medias/produits/lunettes/photo_25_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Lunette 16">
+                        <p class="bg-info-subtle">Prix : 5000 F</p> 
+                        <a type="button" class="btn btn-primary" href="buy.html?id=lunette25">Acheter</a>  
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card h-75 produit">
+                        <img src="medias/produits/lunettes/photo_26_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Lunette 17">
+                        <p class="bg-info-subtle">Prix : 5000 F</p> 
+                        <a type="button" class="btn btn-primary" href="buy.html?id=lunette26">Acheter</a>  
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card h-75 produit">
+                        <img src="medias/produits/lunettes/photo_27_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Lunette 18">
+                        <p class="bg-info-subtle">Prix : 5000 F</p> 
+                        <a type="button" class="btn btn-primary" href="buy.html?id=lunette27">Acheter</a>  
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card h-75 produit">
+                        <img src="medias/produits/lunettes/photo_28_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Lunette 19">
+                        <p class="bg-info-subtle">Prix : 5000 F</p> 
+                        <a type="button" class="btn btn-primary" href="buy.html?id=lunette28">Acheter</a>  
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card h-75 produit">
+                        <img src="medias/produits/lunettes/photo_29_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Lunette 20">
+                        <p class="bg-info-subtle">Prix : 5000 F</p> 
+                        <a type="button" class="btn btn-primary" href="buy.html?id=lunette29">Acheter</a>  
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card h-75 produit">
+                        <img src="medias/produits/lunettes/photo_30_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Lunette 21">
+                        <p class="bg-info-subtle">Prix : 5000 F</p> 
+                        <a type="button" class="btn btn-primary" href="buy.html?id=lunette30">Acheter</a>  
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card h-75 produit">
+                        <img src="medias/produits/lunettes/photo_31_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Lunette 22">
+                        <p class="bg-info-subtle">Prix : 5000 F</p> 
+                        <a type="button" class="btn btn-primary" href="buy.html?id=lunette31">Acheter</a>  
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card h-75 produit">
+                        <img src="medias/produits/lunettes/photo_33_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Lunette 22">
+                        <p class="bg-info-subtle">Prix : 5000 F</p> 
+                        <a type="button" class="btn btn-primary" href="buy.html?id=lunette32">Acheter</a>  
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card h-75 produit">
+                        <img src="medias/produits/lunettes/photo_34_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Lunette 22">
+                        <p class="bg-info-subtle">Prix : 5000 F</p> 
+                        <a type="button" class="btn btn-primary" href="buy.html?id=lunette33">Acheter</a>  
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card h-75 produit">
+                        <img src="medias/produits/lunettes/photo_35_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Lunette 22">
+                        <p class="bg-info-subtle">Prix : 5000 F</p> 
+                        <a type="button" class="btn btn-primary" href="buy.html?id=lunette34">Acheter</a>  
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card h-75 produit">
+                        <img src="medias/produits/lunettes/photo_36_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Lunette 22">
+                        <p class="bg-info-subtle">Prix : 5000 F</p> 
+                        <a type="button" class="btn btn-primary" href="buy.html?id=lunette35">Acheter</a>  
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card h-75 produit">
+                        <img src="medias/produits/lunettes/photo_40_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Lunette 22">
+                        <p class="bg-info-subtle">Prix : 5000 F</p> 
+                        <a type="button" class="btn btn-primary" href="buy.html?id=lunette36">Acheter</a>  
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card h-75 produit">
+                        <img src="medias/produits/lunettes/photo_41_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Lunette 22">
+                        <p class="bg-info-subtle">Prix : 5000 F</p> 
+                        <a type="button" class="btn btn-primary" href="buy.html?id=lunette37">Acheter</a>  
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card h-75 produit">
+                        <img src="medias/produits/lunettes/photo_43_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Lunette 22">
+                        <p class="bg-info-subtle">Prix : 5000 F</p> 
+                        <a type="button" class="btn btn-primary" href="buy.html?id=lunette38">Acheter</a>  
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card h-75 produit">
+                        <img src="medias/produits/lunettes/photo_44_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Lunette 22">
+                        <p class="bg-info-subtle">Prix : 5000 F</p> 
+                        <a type="button" class="btn btn-primary" href="buy.html?id=lunette39">Acheter</a>  
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card h-75 produit">
+                        <img src="medias/produits/lunettes/photo_45_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Lunette 22">
+                        <p class="bg-info-subtle">Prix : 5000 F</p> 
+                        <a type="button" class="btn btn-primary" href="buy.html?id=lunette40">Acheter</a>  
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card h-75 produit">
+                        <img src="medias/produits/lunettes/photo_46_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Lunette 22">
+                        <p class="bg-info-subtle">Prix : 5000 F</p> 
+                        <a type="button" class="btn btn-primary" href="buy.html?id=lunette41">Acheter</a>  
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card h-75 produit">
+                        <img src="medias/produits/lunettes/photo_47_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Lunette 22">
+                        <p class="bg-info-subtle">Prix : 5000 F</p> 
+                        <a type="button" class="btn btn-primary" href="buy.html?id=lunette42">Acheter</a>  
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card h-75 produit">
+                        <img src="medias/produits/lunettes/photo_48_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Lunette 22">
+                        <p class="bg-info-subtle">Prix : 5000 F</p> 
+                        <a type="button" class="btn btn-primary" href="buy.html?id=lunette43">Acheter</a>  
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card h-75 produit">
+                        <img src="medias/produits/lunettes/photo_50_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Lunette 22">
+                        <p class="bg-info-subtle">Prix : 5000 F</p> 
+                        <a type="button" class="btn btn-primary" href="buy.html?id=lunette44">Acheter</a>  
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card h-75 produit">
+                        <img src="medias/produits/lunettes/photo_51_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Lunette 22">
+                        <p class="bg-info-subtle">Prix : 5000 F</p> 
+                        <a type="button" class="btn btn-primary" href="buy.html?id=lunette45">Acheter</a>  
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card h-75 produit">
+                        <img src="medias/produits/lunettes/photo_52_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Lunette 22">
+                        <p class="bg-info-subtle">Prix : 5000 F</p> 
+                        <a type="button" class="btn btn-primary" href="buy.html?id=lunette46">Acheter</a>  
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card h-75 produit">
+                        <img src="medias/produits/lunettes/photo_63_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Lunette 22">
+                        <p class="bg-info-subtle">Prix : 5000 F</p> 
+                        <a type="button" class="btn btn-primary" href="buy.html?id=lunette47">Acheter</a>  
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            <div class="categorie" id="montres">
+                <h3>Montres</h3>
+                <div class="row row-cols-2 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-75 produit">
+                    <img src="medias/produits/montres/photo_32_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Montre 1">
+                    <p class="bg-info-subtle">Prix : 5000 F</p> 
+                    <a type="button" class="btn btn-primary" href="buy.html?id=montre1">Acheter</a>  
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-75 produit">
+                    <img src="medias/produits/montres/photo_37_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Montre 2">
+                    <p class="bg-info-subtle">Prix : 5000 F</p> 
+                    <a type="button" class="btn btn-primary" href="buy.html?id=montre2">Acheter</a>  
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-75 produit">
+                    <img src="medias/produits/montres/photo_38_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Montre 3">
+                    <p class="bg-info-subtle">Prix : 5000 F</p> 
+                    <a type="button" class="btn btn-primary" href="buy.html?id=montre3">Acheter</a>  
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-75 produit">
+                    <img src="medias/produits/montres/photo_39_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Montre 4">
+                    <p class="bg-info-subtle">Prix : 5000 F</p> 
+                    <a type="button" class="btn btn-primary" href="buy.html?id=montre4">Acheter</a>  
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-75 produit">
+                    <img src="medias/produits/montres/photo_42_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Montre 5">
+                    <p class="bg-info-subtle">Prix : 5000 F</p> 
+                    <a type="button" class="btn btn-primary" href="buy.html?id=montre5">Acheter</a>  
+                    </div>
+                </div>
+                    <div class="col">
+                        <div class="card h-75 produit">
+                        <img src="medias/produits/montres/photo_49_2026-09-11_20-55-03.jpg" class="card-img-top" alt="...">
+                        <p class="bg-info-subtle">Prix : 5000 F</p> 
+                    <a type="button" class="btn btn-primary" href="buy.html?id=montre6">Acheter</a>  
+                        </div>
+                        </div>
+                        <div class="col">
+                          <div class="card h-75 produit">
+                          <img src="medias/produits/montres/photo_53_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Montre 10">
+                          <p class="bg-info-subtle">Prix : 5000 F</p> 
+                          <a type="button" class="btn btn-primary" href="buy.html?id=montre13">Acheter</a>  
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card h-75 produit">
+                          <img src="medias/produits/montres/photo_54_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Montre 11">
+                          <p class="bg-info-subtle">Prix : 5000 F</p> 
+                          <a type="button" class="btn btn-primary" href="buy.html?id=montre7">Acheter</a>  
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card h-75 produit">
+                          <img src="medias/produits/montres/photo_55_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Montre 12">
+                          <p class="bg-info-subtle">Prix : 5000 F</p> 
+                          <a type="button" class="btn btn-primary" href="buy.html?id=montre8">Acheter</a>  
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card h-75 produit">
+                          <img src="medias/produits/montres/photo_56_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Montre 13">
+                          <p class="bg-info-subtle">Prix : 5000 F</p> 
+                          <a type="button" class="btn btn-primary" href="buy.html?id=montre9">Acheter</a>  
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card h-75 produit">
+                          <img src="medias/produits/montres/photo_57_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Montre 14">
+                          <p class="bg-info-subtle">Prix : 5000 F</p> 
+                          <a type="button" class="btn btn-primary" href="buy.html?id=montre10">Acheter</a>  
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card h-75 produit">
+                          <img src="medias/produits/montres/photo_59_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Montre 16">
+                          <p class="bg-info-subtle">Prix : 5000 F</p> 
+                          <a type="button" class="btn btn-primary" href="buy.html?id=montre11">Acheter</a>  
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card h-75 produit">
+                          <img src="medias/produits/montres/photo_60_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Montre 17">
+                          <p class="bg-info-subtle">Prix : 5000 F</p> 
+                          <a type="button" class="btn btn-primary" href="buy.html?id=montre12">Acheter</a>  
+                          </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="categorie" id="autres">
+                <h3>Autres</h3>
+                <div class="row row-cols-2 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-75 produit">
+                    <img src="medias/produits/photo_61_2026-09-11_20-55-03.jpg" class="card-img-top" alt="...">
+                    <p class="bg-info-subtle">Prix : 5000 F</p> 
+                    <a type="button" class="btn btn-primary" href="buy.html?id=autre1">Acheter</a>  
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-75 produit">
+                    <img src="medias/produits/photo_62_2026-09-11_20-55-03.jpg" class="card-img-top" alt="...">
+                    <p class="bg-info-subtle">Prix : 5000 F</p> 
+                    <a type="button" class="btn btn-primary" href="buy.html?id=autre2">Acheter</a>  
+                    </div>
+                </div>
+                 <div class="col">
+                          <div class="card h-75 produit">
+                          <img src="medias/produits/montres/photo_58_2026-09-11_20-55-03.jpg" class="card-img-top" alt="Montre 15">
+                          <p class="bg-info-subtle">Prix : 5000 F</p> 
+                          <a type="button" class="btn btn-primary" href="buy.html?id=autre3">Acheter</a>  
+                          </div>
+                        </div>
+                        
+            </div>
+        </div> 
+      </div>
+      <a href="#produits" class="d-flex justify-content-end" id="back-to-top"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/></svg></a> 
+    </div>
+  </div>
+</main>
+
+<footer>
+        <p>&copy; 2026 Elhadji Business. Tous droits réservés.</p>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script>
+  let btndarkMode = document.getElementById("dark-mode-toggle");
+let btnlightMode = document.getElementById("light-mode-toggle");
+let darkModeIcon = document.getElementById("dark-mode-icon");
+let lightModeIcon = document.getElementById("light-mode-icon");
+let theme = document.documentElement.getAttribute('data-bs-theme');
+
+if (theme === "dark") {
+    btnlightMode.style.display = "block";
+    btndarkMode.style.display = "none";
+} else {
+    btndarkMode.style.display = "block";
+    btnlightMode.style.display = "none";
+}
+
+btndarkMode.addEventListener("click", 
+    () => {
+    document.documentElement.setAttribute('data-bs-theme', 'dark');
+    localStorage.setItem("theme", "dark");
+    btnlightMode.style.display = "block";
+    btndarkMode.style.display = "none";
+});
+
+btnlightMode.addEventListener("click",
+    () => {
+    document.documentElement.setAttribute('data-bs-theme', 'light');
+    localStorage.setItem("theme", "light");
+    btndarkMode.style.display = "block";
+    btnlightMode.style.display = "none";
+});
+</script>
+</html>
